@@ -1,0 +1,10 @@
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_iam#google_project_iam_binding
+resource "google_project_iam_binding" "{{ custom_role_name }}-binding" {
+  project = "{{ project_id }}"
+  role    = "roles/{{ custom_role_name }}"
+  members = [
+    {%- for email in users %}
+        "user:{{ email }}",
+    {%- endfor %}
+  ]
+}

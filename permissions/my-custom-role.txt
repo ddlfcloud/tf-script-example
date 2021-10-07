@@ -1,0 +1,3 @@
+john@mydomain.com
+jane@mydomain.com
+kim@mydomain.com
