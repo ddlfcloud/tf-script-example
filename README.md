@@ -1,4 +1,4 @@
-## no warranty is provided, proper testing should be used in production environments. This repository is for demonstration purposes only.
+## no warranty is provided, proper testing should be done before being used in production environments. This repository is for demonstration purposes only.
 
 # Concept
 Users or automation will only have to update and create permissions plain text files and the python will hydrate permission files into TF files.
